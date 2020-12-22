@@ -60,6 +60,20 @@ body {
   .nav-link:hover{
   color: var(--mainBlack);
 }
+.logo-icon {
+  font-size: 2em;		
+  margin: 0.3em 0 0.3em 0;
+  cursor: default;
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+.cart-icon {
+  font-size: 1.5em;		
+  margin: 0.3em 0 0.3em 0;
+  cursor: default;
+  color: var(--primaryColor);
+  cursor: pointer;
+}
 
  /* nav-links font */
 @media screen and (min-width: 538px){

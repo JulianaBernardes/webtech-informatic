@@ -111,8 +111,6 @@ class UI {
             itemsTotal += item.amount
         })
         cartTotal.innerText = parseFloat(tempTotal.toFixed(2))
-        // add amount of cart items
-        if(itemsTotal != 0) cartItems.innerText = itemsTotal
     }
     addCartItem(item) {
         const div = document.createElement('div')
