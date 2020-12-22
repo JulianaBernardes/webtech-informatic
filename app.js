@@ -28,10 +28,6 @@ class Products {
     async getProducts() {
         try {
 
-            // let contentful = await client.getEntries({
-            //     content_type: 'careHouseProducts'
-            // })
-
             let result = await fetch('products.json')
             let data = await result.json()
 
@@ -39,7 +35,7 @@ class Products {
             products = products.map(item => {
                 const { title, price } = item.fields
                 const { id } = item.sys
-                const image = item.fields.image.fields.file.url
+                const image = item.fields.image.url
                 return { title, price, id, image }
             })
             return products
@@ -115,7 +111,8 @@ class UI {
             itemsTotal += item.amount
         })
         cartTotal.innerText = parseFloat(tempTotal.toFixed(2))
-        cartItems.innerText = itemsTotal
+        // add amount of cart items
+        if(itemsTotal != 0) cartItems.innerText = itemsTotal
     }
     addCartItem(item) {
         const div = document.createElement('div')
@@ -133,8 +130,8 @@ class UI {
             <i class="fas fa-chevron-down" data-id=${item.id}></i>
         </div>`
         cartContent.appendChild(div)
-
     }
+
     showCart() {
         cartOverlay.classList.add("transparentBcg")
         cartDOM.classList.add("showCart")

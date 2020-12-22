@@ -5,7 +5,7 @@
         "fields": {
           "title": "nootbook asus legion",
           "price": 899.99,
-          "image": { "fields": { "file": { "url": "./images/product-1.jpg" } } }
+          "image": { "url": "./images/product-1.jpg" }
         }
       },
       {
@@ -13,7 +13,7 @@
         "fields": {
           "title": "monitor",
           "price": 120.99,
-          "image": { "fields": { "file": { "url": "./images/product-1.jpg" } } }
+          "image":{ "url": "./images/product-1.jpg" }
         }
       }
     ]
