@@ -64,7 +64,7 @@ class UI {
                     >
                     <button class="bag-btn" data-id=${product.id}>
                         <i class="fas fa-shopping-cart"></i>
-                        add to cart
+                        Adicionar ao carrinho
                     </button>
                 </div>
                 <h3>${product.title}</h3>
@@ -82,11 +82,11 @@ class UI {
             let id = button.dataset.id
             let inCart = cart.find(item => item.id === id)
             if (inCart) {
-                button.innerText = "In cart"
+                button.innerText = "no Carrinho"
                 button.disabled = true
             }
             button.addEventListener('click', (event) => {
-                event.target.innerText = "In cart"
+                event.target.innerText = "no Carrinho"
                 event.target.disabled = true
                 // get product from products
                 let cartItem = { ...Storage.getProduct(id), amount: 1 }
