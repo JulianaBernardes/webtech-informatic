@@ -17,13 +17,13 @@ let cart = []
 // buttons
 let buttonsDOM = []
 
-// scroll to products
+// scroll
 scrollButton.addEventListener('click', () => {
     const products = document.querySelector(".products");
     products.scrollIntoView({behavior: "smooth"})
 })
 
-// getting the products
+//products
 class Products {
     async getProducts() {
         try {
@@ -33,9 +33,9 @@ class Products {
 
             let products = data.items
             products = products.map(item => {
-                const { title, price } = item.fields
-                const { id } = item.sys
-                const image = item.fields.image.url
+                const { title, price } = item
+                const { id } = item
+                const image = item.image.url
                 return { title, price, id, image }
             })
             return products

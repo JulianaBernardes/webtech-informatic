@@ -1,68 +1,52 @@
 {
     "items": [
       {
-        "sys": { "id": "1" },
-        "fields": {
+          "id": "1",
           "title": "nootbook hp x360",
           "price": 1423.95,
           "image": { "url": "./images/product-1.jpg" }
-        }
-      },
+        },
       {
-        "sys": { "id": "2" },
-        "fields": {
+          "id": "2",
           "title": "nootbook lenovo V14-IIL",
           "price": 517.95,
           "image":{ "url": "./images/product-2.jpg" }
-        }
-      },
+        },
       {
-        "sys": { "id": "3" },
-        "fields": {
+          "id": "3",
           "title": "notebook asus zenbook",
           "price": 899.99,
           "image":{ "url": "./images/product-3.jpg" }
-        }
-      },
+        },
       {
-        "sys": { "id": "4" },
-        "fields": {
+          "id": "4",
           "title": "notebook portátil HP elitebook",
           "price": 120.99,
           "image":{ "url": "./images/product-4.jpg" }
-        }
-      },
+        },
       {
-        "sys": { "id": "5" },
-        "fields": {
+          "id": "5",
           "title": "Monitor AOC 24P",
           "price": 250.99,
           "image":{ "url": "./images/product-5.jpg" }
-        }
-      },
+        },
       {
-        "sys": { "id": "6" },
-        "fields": {
+          "id": "6",
           "title": "Monitor AOC G1 C24G1",
           "price": 191.95,
           "image":{ "url": "./images/product-6.jpg" }
-        }
-      },
+        },
       {
-        "sys": { "id": "7" },
-        "fields": {
+          "id": "7",
           "title": "Rato ASUS RF Wireless Ótico",
           "price": 16.99,
           "image":{ "url": "./images/product-7.jpg" }
-        }
-      },
+        },
       {
-        "sys": { "id": "8" },
-        "fields": {
+          "id": "8",
           "title": "Rato ASUS Gaming Impact",
           "price": 53.95,
           "image":{ "url": "./images/product-8.jpg" }
         }
-      }
     ]
   }
