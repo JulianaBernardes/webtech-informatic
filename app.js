@@ -23,7 +23,7 @@ scrollButton.addEventListener('click', () => {
     products.scrollIntoView({behavior: "smooth"})
 })
 
-//products
+//get products
 class Products {
     async getProducts() {
         try {
@@ -119,8 +119,7 @@ class UI {
         alt="product">
         <div>
             <h4>${item.title}</h4>
-            <h5>€${item.price}</h5>
-            <span class="remove-item" data-id=${item.id}>remove</span>
+            <h5>€${item.price}</h5>            
         </div>
         <div>
             <i class="fas fa-chevron-up" data-id=${item.id}></i>
@@ -155,13 +154,8 @@ class UI {
         })
         // cart functionality
         cartContent.addEventListener("click", event => {
-            if (event.target.classList.contains("remove-item")) {
-                let removeItem = event.target
-                let id = removeItem.dataset.id
-                cartContent.removeChild(removeItem.parentElement.parentElement);
-                this.removeItem(id)
-            }
-            else if (event.target.classList.contains("fa-chevron-up")) {
+
+            if (event.target.classList.contains("fa-chevron-up")) {
                 let addAmount = event.target
                 let id = addAmount.dataset.id
                 let tempItem = cart.find(item => item.id === id)
@@ -200,8 +194,8 @@ class UI {
         this.setCartValues(cart)
         Storage.saveCart(cart)
         let button = this.getSingleButton(id)
-        button.disabled = false
-        button.innerHTML = `<i class="fas fa-shopping-cart"></i>add to cart`
+        button.disabled = false // allows to add the item back to the cart
+        button.innerHTML = `<i class="fas fa-shopping-cart"></i>adicionar ao carrinho` 
     }
     getSingleButton(id) {
         return buttonsDOM.find(button => button.dataset.id === id)
