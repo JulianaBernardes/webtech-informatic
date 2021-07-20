@@ -3,7 +3,7 @@
 # Demonstration
 
 <p align="center">
-  <a href="webtech-informatic.netlify.app">
+  <a href="https://webtech-informatic.netlify.app">
 <img align="center" src="/github/demoOnNetlify.png">
 </a>
 </p>
